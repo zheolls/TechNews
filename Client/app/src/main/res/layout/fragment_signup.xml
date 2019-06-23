@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/signupheadlayout"
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+        <android.support.constraint.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/signupheadright"
+            app:layout_constraintGuide_percent="0.63"
+            android:orientation="vertical"/>
+        <android.support.constraint.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/signupheadleft"
+            app:layout_constraintGuide_percent="0.37"
+            android:orientation="vertical"/>
+
+        <ImageView
+            android:id="@+id/signuphead"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/ic_account_circle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="@id/signupheadleft"
+            app:layout_constraintRight_toRightOf="@id/signupheadright"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.constraint.Guideline
+            app:layout_constraintGuide_percent="0.1"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/signininfoleft"
+            android:layout_height="wrap_content" />
+
+        <android.support.constraint.Guideline
+            app:layout_constraintGuide_percent="0.9"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/signininforight"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            app:layout_constraintLeft_toLeftOf="@id/signininfoleft"
+            app:layout_constraintRight_toRightOf="@id/signininforight"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/signupemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="邮箱"
+                    android:textSize="16sp"
+                    android:imeActionId="6"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/signuppassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="密码"
+                    android:textSize="16sp"
+                    android:imeActionId="6"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/signupphone"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="手机"
+                    android:textSize="16sp"
+
+                    android:imeActionId="6"
+                    android:imeOptions="actionNext"
+                    android:inputType="text|phone"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/signupname"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="昵称"
+                    android:imeActionId="6"
+                    android:textSize="16sp"
+
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="textPersonName"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/signupbutton"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:text="注册"
+                    android:layout_margin="5dip"
+                    android:background="@color/colorPrimary"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>

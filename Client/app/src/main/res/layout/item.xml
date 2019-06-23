@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="75dp">
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/layout_item_1"
+        android:orientation="horizontal">
+        <android.support.constraint.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/left_guideline"
+            app:layout_constraintGuide_percent="0.07"
+            android:orientation="vertical"/>
+
+        <android.support.constraint.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/right_guideline"
+            app:layout_constraintGuide_percent="0.93"
+            android:orientation="vertical"/>
+
+        <android.support.constraint.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/top_guideline"
+            app:layout_constraintGuide_percent=".1"
+            android:orientation="horizontal"/>
+
+        <android.support.constraint.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bottom_guideline"
+            app:layout_constraintGuide_percent=".9"
+            android:orientation="horizontal"/>
+        <TextView
+            android:id="@+id/title1"
+            android:typeface="sans"
+            android:textSize="16sp"
+            android:text="Pixebook正被用于测试谷歌全新的Fuchsia系统,Pixebook正被用于测试谷歌全新的Fuchs"
+            android:layout_width="0dp"
+            android:textColor="#000000"
+            android:layout_height="0dp"
+            app:layout_constraintLeft_toLeftOf="@+id/left_guideline"
+            app:layout_constraintRight_toRightOf="@+id/right_guideline"
+            app:layout_constraintTop_toTopOf="@+id/top_guideline"
+            app:layout_constraintBottom_toBottomOf="@+id/bottom_guideline"
+             />
+    </android.support.constraint.ConstraintLayout>
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:id="@+id/layout_item_2"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <android.support.constraint.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/left_guideline2"
+            app:layout_constraintGuide_percent="0.07"
+            android:orientation="vertical"/>
+
+        <android.support.constraint.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/right_guideline2"
+            app:layout_constraintGuide_percent="0.5"
+            android:orientation="vertical"/>
+        <android.support.constraint.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/left_guideline2_2"
+            app:layout_constraintGuide_percent="0.5"
+            android:orientation="vertical"/>
+
+        <android.support.constraint.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/right_guideline2_2"
+            app:layout_constraintGuide_percent="0.93"
+            android:orientation="vertical"/>
+
+        <android.support.constraint.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/top_guideline2"
+            app:layout_constraintGuide_percent=".1"
+            android:orientation="horizontal"/>
+
+        <android.support.constraint.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bottom_guideline2"
+            app:layout_constraintGuide_percent=".8"
+            android:orientation="horizontal"/>
+
+        <TextView
+            android:id="@+id/time1"
+            android:text="2017-12-30"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintLeft_toLeftOf="@+id/left_guideline2"
+            app:layout_constraintRight_toRightOf="@+id/right_guideline2"
+            app:layout_constraintTop_toTopOf="@+id/top_guideline2"
+            app:layout_constraintBottom_toBottomOf="@+id/bottom_guideline2" />
+        <TextView
+            android:id="@+id/readnum"
+            android:text="1000次"
+            android:gravity="right"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintLeft_toLeftOf="@+id/left_guideline2_2"
+            app:layout_constraintRight_toRightOf="@+id/right_guideline2_2"
+            app:layout_constraintTop_toTopOf="@+id/top_guideline2"
+            app:layout_constraintBottom_toBottomOf="@+id/bottom_guideline2" />
+    </android.support.constraint.ConstraintLayout>
+
+
+
+</LinearLayout>

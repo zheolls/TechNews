@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@style/AppTheme"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:padding="10dp"
+    >
+
+    <ImageView
+        android:id="@+id/cover"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        tools:src="@drawable/ic_image_loading"
+        android:contentDescription="TODO" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/cover"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/cover"
+        android:maxLines="3"
+        android:theme="@style/AppTheme"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:text="标题"
+        android:layout_marginStart="8dp"
+        android:layout_toEndOf="@id/cover" />
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center_vertical"
+        android:layout_alignLeft="@+id/title"
+        android:layout_alignBottom="@+id/cover"
+        android:orientation="horizontal"
+        android:layout_alignStart="@+id/title"
+        tools:ignore="RtlHardcoded">
+
+        <TextView
+            android:id="@+id/author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:textColor="#333333"
+            android:textSize="15sp"
+            tools:text="作者"
+            android:layout_marginStart="2dp" />
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginLeft="6dp"
+            android:src="@drawable/ic_girl_see"
+            android:layout_marginStart="6dp"
+            android:contentDescription="TODO" />
+
+        <TextView
+            android:id="@+id/fever"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:textColor="#666666"
+            android:textSize="15sp"
+            tools:text="0"
+            android:layout_marginStart="2dp" />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="时间"
+        android:layout_alignBottom="@+id/cover"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        tools:ignore="RelativeOverlap" />
+</RelativeLayout>

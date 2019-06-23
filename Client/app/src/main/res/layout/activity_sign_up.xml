@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="hit.TechNews.SignUp">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:title="欢迎使用科技新闻"
+        app:titleTextColor="#FFFFFF"
+        android:layout_alignParentTop="true"
+        android:id="@+id/signuptoolbar"
+        android:background="?attr/colorPrimary">
+    </android.support.v7.widget.Toolbar>
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/signupheadlayout"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/signuptoolbar"
+        android:layout_height="120dp">
+        <android.support.constraint.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/signupheadright"
+            app:layout_constraintGuide_percent="0.63"
+            android:orientation="vertical"/>
+        <android.support.constraint.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/signupheadleft"
+            app:layout_constraintGuide_percent="0.37"
+            android:orientation="vertical"/>
+
+        <ImageView
+            android:id="@+id/signuphead"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_account_circle"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="@id/signupheadleft"
+            app:layout_constraintRight_toRightOf="@id/signupheadright"
+            tools:layout_editor_absoluteY="10dp"
+            tools:ignore="MissingConstraints" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/signupheadlayout"
+        android:layout_height="match_parent">
+        <android.support.constraint.Guideline
+            app:layout_constraintGuide_percent="0.1"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/signininfoleft"
+            android:layout_height="wrap_content" />
+
+        <android.support.constraint.Guideline
+            app:layout_constraintGuide_percent="0.9"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/signininforight"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            app:layout_constraintLeft_toLeftOf="@id/signininfoleft"
+            app:layout_constraintRight_toRightOf="@id/signininforight"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/signupemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="邮箱"
+                    android:textSize="16sp"
+                    android:imeActionId="6"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/signuppassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="密码"
+                    android:textSize="16sp"
+                    android:imeActionId="6"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/signupphone"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="手机"
+                    android:textSize="16sp"
+
+                    android:imeActionId="6"
+                    android:imeOptions="actionNext"
+                    android:inputType="text|phone"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/signupname"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="昵称"
+                    android:imeActionId="6"
+                    android:textSize="16sp"
+
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="textPersonName"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/signupbutton"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:textColor="?attr/background"
+                    android:text="注册"
+                    android:layout_margin="5dip"
+                    android:background="@drawable/btn_bg_red"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+</RelativeLayout>

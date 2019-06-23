@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="?attr/background"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/background"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/journalism"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/main_news"
+            android:paddingBottom="2dp"
+            android:paddingTop="7dp"
+            android:text="@string/fragment_news"
+            android:textColor="@color/main_text"
+            android:textSize="12sp"/>
+
+        <Button
+            android:id="@+id/video"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/main_video"
+            android:paddingBottom="2dp"
+            android:paddingTop="7dp"
+            android:text="@string/fragment_video"
+            android:textColor="@color/main_text"
+            android:textSize="12sp"/>
+
+        <Button
+            android:id="@+id/mine"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/main_mine"
+            android:paddingBottom="2dp"
+            android:paddingTop="7dp"
+            android:text="@string/fragment_mine"
+            android:textColor="@color/main_text"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_above="@id/bottom"
+        android:background="#dcdcdc"
+        />
+    <android.support.v4.view.ViewPager
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/viewPager"
+        android:layout_above="@id/divider"
+        />
+</RelativeLayout>

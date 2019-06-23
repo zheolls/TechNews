@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="hit.TechNews.CollectArticle">
+    <android.support.v7.widget.Toolbar
+        android:background="?attr/colorPrimary"
+        android:id="@+id/collectarticletoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        app:subtitleTextColor="#FFEBEE"
+        app:titleTextColor="#FFEBEE"
+        app:title="收藏的文章"/>
+
+    <ListView
+        android:layout_below="@+id/collectarticletoolbar"
+        android:id="@+id/collectarticlelist"
+        android:background="?attr/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+</RelativeLayout>

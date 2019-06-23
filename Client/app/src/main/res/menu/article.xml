@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group
+        android:visible="true"
+        android:id="@+id/menugroup">
+        <item
+            android:title="favoriteArticle"
+            android:visible="true"
+            android:id="@+id/star"
+            app:showAsAction="ifRoom|collapseActionView"
+            android:icon="@drawable/ic_star_border">
+        </item>
+        <item
+            android:visible="true"
+            android:id="@+id/share"
+            android:title="分享"
+            android:icon="@drawable/ic_share"
+            app:showAsAction="always|collapseActionView">
+        </item>
+    </group>
+
+</menu>

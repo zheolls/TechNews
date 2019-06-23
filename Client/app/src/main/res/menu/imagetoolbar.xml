@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="refresh"
+        android:id="@+id/refresh"
+        android:icon="@drawable/ic_refresh"
+        app:showAsAction="always|collapseActionView"
+        >
+
+    </item>
+    <item
+        android:title="shift"
+        android:icon="@drawable/ic_repeat"
+        app:showAsAction="ifRoom|collapseActionView"
+        android:id="@+id/shift">
+
+    </item>
+</menu>

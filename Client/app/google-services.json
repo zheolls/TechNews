@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "395911579061",
+    "firebase_url": "https://zheolls.firebaseio.com",
+    "project_id": "zheolls",
+    "storage_bucket": "zheolls.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:395911579061:android:061e8514f6d223a5",
+        "android_client_info": {
+          "package_name": "hit.TechNews"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "395911579061-jqokpa2an4s1msg4mb4430g9dn4tkdnn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBV8pFRDbo5Hi2g7SuGoKhqk8-RmvIw3Po"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "395911579061-er2sfsu7i8m3epn7ir2p4kqq10t5h055.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

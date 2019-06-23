@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/timely"
+        android:title="分时">
+
+    </item>
+    <item
+        android:id="@+id/daily"
+        android:title="日K">
+
+    </item>
+    <item
+        android:id="@+id/weekly"
+        android:title="周K">
+
+    </item>
+    <item
+        android:id="@+id/monthly"
+        android:title="月K">
+
+    </item>
+
+</menu>
