@@ -1,3 +1,5 @@
+create database technews;
+use technews;
 create table keyword
 (
   name  varchar(20)     not null,
